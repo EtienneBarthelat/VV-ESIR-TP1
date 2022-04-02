@@ -12,6 +12,8 @@
 
 ## Answers
 
+BARTHELAT - JUGIEAU
+
 1.  We will talk about the bug of the Year 2000 also known as the Y2K bug. This bug appeared at the passage of the year 1999 to the year 2000. The systems were not designed to process dates after 1999. This design error can be explained by the fact that the memory was limited. It was actually a conception error made due to negligence and ignorance of this case scenario.  
 This bug didn't have huge negative effects on the world, but it did cause panic and considerable sums of money were spent in order to fix the issue on all devices.
 There is a similar bug known as the Year 2038 bug or Y2038 bug which will cause a similar problem in 2038 and will show 1901 instead. It will mainly affect the Linux OS. Switching to 64 bits for storing the date will solve the problem definitively. Indeed, the issue will only present itself again in 250 billion years. Scientists affirm it will not be a problem anymore because the Earth will disappear in 4.5 billion years.  
