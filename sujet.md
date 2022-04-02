@@ -12,26 +12,26 @@
 
 ## Answers
 
-1.
-  We will talk about the bug of the Year 2000 also known as the Y2K bug. This bug appeared at the passage of the year 1999 to the year 2000. The systems were not designed to process dates after 1999. This design error can be explained by the fact that the memory was limited. It was actually a conception error made due to negligence and ignorance of this case scenario.
+1.  We will talk about the bug of the Year 2000 also known as the Y2K bug. This bug appeared at the passage of the year 1999 to the year 2000. The systems were not designed to process dates after 1999. This design error can be explained by the fact that the memory was limited. It was actually a conception error made due to negligence and ignorance of this case scenario.
+
 This bug didn't have huge negative effects on the world, but it did cause panic and considerable sums of money were spent in order to fix the issue on all devices.
 There is a similar bug known as the Year 2038 bug or Y2038 bug which will cause a similar problem in 2038 and will show 1901 instead. It will mainly affect the Linux OS. Switching to 64 bits for storing the date will solve the problem definitively. Indeed, the issue will only present itself again in 250 billion years. Scientists affirm it will not be a problem anymore because the Earth will disappear in 4.5 billion years.
-
 This bug is local even if it affects systems globally because the root of the problem is easily identifiable, it is the structure and format of the date that cause the issue. 
 
 This bug could have been noticed earlier by testing extreme values, mainly the maximum date the clock could display.
 Even then, this scenario could have been avoided by having a more preventative approach : by preparing the migration from the start and not waiting until the last moment to act.
+
 We can imagine this was not taken into consideration because the original system has been created long ago and reused ever since. At the time, perhaps the creator never even considered the program would spread so widely and be kept aronde for so long.
 
 
-2. 
-  We chose the bug number 797 ”SetUniqueList.createSetBasedOnList doesn't add list elements to return value”. This bug is resolved and was due to a careless mistake in which the contributor accidentally deleted a line. This line contained a call to the “addAll” method. We can classify the bug as local since we can clearly pinpoint the exact line where the mistake was made. The solution to this bug is obviously to rewrite the line.
-  
+
+2.  We chose the bug number 797 ”SetUniqueList.createSetBasedOnList doesn't add list elements to return value”. This bug is resolved and was due to a careless mistake in which the contributor accidentally deleted a line. This line contained a call to the “addAll” method. We can classify the bug as local since we can clearly pinpoint the exact line where the mistake was made. The solution to this bug is obviously to rewrite the line.
+
 It does not seem like the contributors added tests to detect this particular type of mistake, although it may be amongst the more simple type of mistakes to detect.
 
 
-3. 
-  If Netflix doesn’t work well enough in one geographical area, they redirect the user somewhere else with a better connection. Using this method, Netflix temporarily increases the latency for the user but doesn’t stop the service, because if they do, even for just a few seconds, the user will stop using the service, especially if this problem occurs too often, which is extremely bad for Netflix. That’s why Netflix uses chaos engineering to limit this deconnection. 
+
+3.  If Netflix doesn’t work well enough in one geographical area, they redirect the user somewhere else with a better connection. Using this method, Netflix temporarily increases the latency for the user but doesn’t stop the service, because if they do, even for just a few seconds, the user will stop using the service, especially if this problem occurs too often, which is extremely bad for Netflix. That’s why Netflix uses chaos engineering to limit this deconnection. 
 
 The metric used by Netflix to characterize the “steady state” is the SPS which means (Stream) Starts Per Second. These metrics evaluate the number of users. When this value decreases drastically, this means that the service is not good enough to keep users on the platform. That way, the quality of their chaos engineering can be evaluated : if the users are satisfied with the service and if they can watch their content without issues.
 
@@ -42,8 +42,8 @@ However, it is very expensive to cause this kind of event on the real system, we
 Even though it popularized it, Netflix is not the only one using this method. For instance we can talk about the SNCF which uses chaos engineering to regulate the rail traffic. If a train has an issue, the service should be able to globally degrade the service a little in order to not stop it entirely. SNCF is infamous for being late and so, while Netflix decreases the quality of their users’ connections, SNCF delays their trains because more important lines are being taken care of. The value they observe to manage their chaos engineering isn’t the viewership, but rather the global latency of their trains.
 
 
-4. 
-  WebAssembly is a modern low-level tool for programming for the Web, although it is not technically a language, it can be treated as such.
+
+4.  WebAssembly is a modern low-level tool for programming for the Web, although it is not technically a language, it can be treated as such.
 
 A particularity of WebAssembly is to use formal precise semantics and syntax. While it forces the user to follow it, it has numerous advantages. Low-level code can be quite confusing but WebAssembly is much easier to understand and explain, less ambiguous, all the while maintaining correct performances. WebAssembly’s type system is extremely simple which aids verification. As such, compilation and validation are made much more simple. It should be noted that despite being formal, WebAssembly is nonetheless very flexible.
 
@@ -53,8 +53,8 @@ In order to achieve this result, memory safety must be guaranteed, which is some
 That being said, as fantastic as WebAssembly seems to be, it is far from immune from testing and verification as a whole. And indeed, WebAssembly was developed with it in mind and actively encourages doing so, thanks to it being clear and concise.
 
 
-5.
-  This paper presents a mechanised specification of WebAssembly.
+
+5.  This paper presents a mechanised specification of WebAssembly.
 
 The mechanisation follows the idea of “eyeball closeness”, that is to say, there is an almost line to line textual correspondence between the official specification and the mechanisation. That means someone familiar with the original specification should have no trouble with the mechanisation. The mechanisation also defines more reduction rules, such as some regarding types to make the code cleaner, several function behaviours are also implemented. On some occasions, the original WebAssembly specification and its draft are not quite identical and while the official paper is prioritised, the draft can offer unique functionalities or aid with compatibility.
 
